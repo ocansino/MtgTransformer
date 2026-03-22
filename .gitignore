@@ -1,0 +1,4 @@
+# Ignore large data files
+train.csv
+test.csv
+
