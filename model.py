@@ -123,7 +123,6 @@ class DraftTransformer(nn.Module):
         causal_mask = self.make_causal_mask(seq_len, device)
 
         # Optional padding mask: True where padding tokens exist
-        # This matters more if you later batch variable-length sequences.
         padding_mask = (x == self.pad_id)
 
         # Run transformer
